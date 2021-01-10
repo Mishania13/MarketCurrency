@@ -39,7 +39,7 @@ class CurrencyListViewModel: CurrencyListViewModelProtocol {
     }
     
     func fetchMarketData(clousure: @escaping () -> Void) {
-        NetworkManager.shared.fetchData { (currentmarketDataResponse) in
+        NetworkManager.shared.fetchData() { (currentmarketDataResponse) in
             
             DispatchQueue.main.sync {
                 self.currentMarketData = currentmarketDataResponse
@@ -47,7 +47,6 @@ class CurrencyListViewModel: CurrencyListViewModelProtocol {
             }
         }
     }
-    
     
     func cellViewModel(at indexPath: IndexPath) -> CurrencyCellViewModelProtocol? {
         CurrencyCustomCellViewModel(currencyInfo: self.currentMarketData?.stock[indexPath.row])
@@ -75,9 +74,9 @@ class CurrencyListViewModel: CurrencyListViewModelProtocol {
         }
         
         DataManager.shared.toggleSortStatus(sortBy: .percent)
-
+        
         DispatchQueue.main.async {self.reloadData()}
-
+        
     }
     
     func sortedByPrice() {
@@ -88,7 +87,7 @@ class CurrencyListViewModel: CurrencyListViewModelProtocol {
         }
         
         DataManager.shared.toggleSortStatus(sortBy: .price)
-
+        
         DispatchQueue.main.async {self.reloadData()}
     }
     

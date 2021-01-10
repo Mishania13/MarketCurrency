@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8CE8A16655ECCE9F7C35B10 /* Pods_MarketCurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3206DA619D527371841701DB /* Pods_MarketCurrency.framework */; };
 		D662A5EF24CC587500A7E0D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662A5EE24CC587500A7E0D7 /* AppDelegate.swift */; };
 		D662A5F624CC587500A7E0D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D662A5F424CC587500A7E0D7 /* Main.storyboard */; };
 		D662A5F824CC587900A7E0D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D662A5F724CC587900A7E0D7 /* Assets.xcassets */; };
@@ -23,9 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3206DA619D527371841701DB /* Pods_MarketCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3553E7527313AF752BA09D2 /* Pods-MarketCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCurrency.release.xcconfig"; path = "Target Support Files/Pods-MarketCurrency/Pods-MarketCurrency.release.xcconfig"; sourceTree = "<group>"; };
-		D00E38D05F1CB2E790B1A0B3 /* Pods-MarketCurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCurrency.debug.xcconfig"; path = "Target Support Files/Pods-MarketCurrency/Pods-MarketCurrency.debug.xcconfig"; sourceTree = "<group>"; };
 		D662A5EB24CC587500A7E0D7 /* MarketCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D662A5EE24CC587500A7E0D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D662A5F524CC587500A7E0D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,28 +43,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8CE8A16655ECCE9F7C35B10 /* Pods_MarketCurrency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31051727D327D5EF7B30830F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3206DA619D527371841701DB /* Pods_MarketCurrency.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D662A5E224CC587500A7E0D7 = {
 			isa = PBXGroup;
 			children = (
 				D662A5ED24CC587500A7E0D7 /* MarketCurrency */,
 				D662A5EC24CC587500A7E0D7 /* Products */,
-				E8EFEC5FA7240B107B794960 /* Pods */,
-				31051727D327D5EF7B30830F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,15 +133,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E8EFEC5FA7240B107B794960 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D00E38D05F1CB2E790B1A0B3 /* Pods-MarketCurrency.debug.xcconfig */,
-				B3553E7527313AF752BA09D2 /* Pods-MarketCurrency.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,11 +140,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D662A5FF24CC587900A7E0D7 /* Build configuration list for PBXNativeTarget "MarketCurrency" */;
 			buildPhases = (
-				CE2AB85810DAB59A9E4E6E21 /* [CP] Check Pods Manifest.lock */,
 				D662A5E724CC587500A7E0D7 /* Sources */,
 				D662A5E824CC587500A7E0D7 /* Frameworks */,
 				D662A5E924CC587500A7E0D7 /* Resources */,
-				02FB0192745BCF14CE57F6D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,48 +198,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		02FB0192745BCF14CE57F6D6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MarketCurrency/Pods-MarketCurrency-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MarketCurrency/Pods-MarketCurrency-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketCurrency/Pods-MarketCurrency-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE2AB85810DAB59A9E4E6E21 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MarketCurrency-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D662A5E724CC587500A7E0D7 /* Sources */ = {
@@ -424,7 +356,6 @@
 		};
 		D662A60024CC587900A7E0D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00E38D05F1CB2E790B1A0B3 /* Pods-MarketCurrency.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,7 +375,6 @@
 		};
 		D662A60124CC587900A7E0D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3553E7527313AF752BA09D2 /* Pods-MarketCurrency.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
